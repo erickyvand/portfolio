@@ -1,9 +1,14 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Contact = () => {
 	return (
 		<div>
-			<p>Contact Page</p>
+			<Container>
+				<Row>
+					<Col>Contact</Col>
+				</Row>
+			</Container>
 		</div>
 	);
 };

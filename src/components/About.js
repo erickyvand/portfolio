@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const About = () => {
-  return (
-    <div>
-      <p>About page</p>
-    </div>
-  )
-}
+	return (
+		<div>
+			<Container>
+				<Row>
+					<Col>About Page</Col>
+				</Row>
+			</Container>
+		</div>
+	);
+};
 
-export default About
+export default About;
