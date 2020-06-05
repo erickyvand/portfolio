@@ -19,3 +19,20 @@ body {
   width: 100%;
   height: 650px;
 }
+
+.logo {
+	width: 110px;
+	height: 100px;
+	margin: auto;
+}
+
+.card {
+	width: 8rem;
+	height: 150px;
+	margin: 4px;
+}
+
+.card-title {
+	color: rgb(53, 47, 47);
+	text-align: center;
+}

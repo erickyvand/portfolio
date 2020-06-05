@@ -1,10 +1,10 @@
 import React from 'react';
 
 export const firstElement =
-	'My name is Iragena Eric, you can also call me Ericky Vand, I am a Software Developer with experience. Overall my skills covers web development. I have a Bachelor Degree in Business Information Technology, got from Mount Kenya University in 2013.';
+	<span>My name is Iragena Eric, you can also call me Ericky Vand, I am a Software Developer with experience. Overall my skills covers web development. I have a Bachelor Degree in Business Information Technology, got from Mount Kenya University in 2013.</span>;
 
 export const secondeElement =
-	'I have been doing Software Development since 2018, in my free time when I am not coding, I like practice some workout, play guitar, swimming and also watching football matches.';
+	<span>I have been doing Software Development since 2018, in my free time when I am not coding, I like practice some workout, play guitar, swimming and also watching football matches.</span>;
 
 export const thirdElement = (
 	<p>
@@ -15,3 +15,5 @@ export const thirdElement = (
 		it is time to change the world.
 	</p>
 );
+
+export const firstAboutElement = <span></span>
