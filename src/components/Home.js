@@ -7,7 +7,9 @@ import Photo from '../../assets/vand.jpg';
 import Pic from '../../assets/ericky.jpeg';
 
 const Home = () => {
-
+	useEffect(() => {
+		document.title = 'Portfolio | Home';
+	}, []);
 	return (
 		<div>
 			<Container>
