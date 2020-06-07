@@ -13,124 +13,106 @@ import GitHub from '../../assets/github.png';
 import PivotalTracker from '../../assets/pivotal-tracker.png';
 import TravisLogo from '../../assets/travis.png';
 import CircleLogo from '../../assets/circle.png';
+import SequelizeLogo from '../../assets/sequelize.png';
+import PostgresLogo from '../../assets/postgres.png';
+import MysqlLogo from '../../assets/mysql.png';
 import '../styles/styles.css';
 
 const About = () => {
 	useEffect(() => {
 		document.title = 'Portfolio | About';
 	}, []);
+
+	const frameworkLogos = [
+		{ name: PhpLogo, title: 'PHP' },
+		{ name: JavascriptLogo, title: 'Javascript' },
+		{ name: LaravelLogo, title: 'Laravel' },
+		{ name: NodeLogo, title: 'NodeJS' },
+		{ name: ReactLogo, title: 'ReactJS' },
+		{ name: ReduxLogo, title: 'Redux' },
+		{ name: WebpackLogo, title: 'Webpack' },
+		{ name: SequelizeLogo, title: 'Sequelize' },
+		{ name: PostgresLogo, title: 'Postgres' },
+		{ name: MysqlLogo, title: 'MySQL' },
+	];
+
+	const projectLogos = [
+		{ name: GitHub, title: 'GitHub' },
+		{ name: PivotalTracker, title: 'Pivotal' },
+	];
+
+	const integrationLogos = [
+		{ name: TravisLogo, title: 'TravisCI' },
+		{ name: CircleLogo, title: 'CircleCI' },
+	];
 	return (
 		<div>
 			<Container>
 				<Row>
 					<Col md={12} xs={12} sm={12} lg={7} xl={7}>
 						<FadeIn delay={2000} transitionDuration={5000}>
-							<p>
-								Through out my software development carrer I worked and I am
-								able to work on these technologies and skills:
-							</p>
-							<h2 className='mt-4'>Programming Languages and Frameworks</h2>
+							<h1>Skills and Endorsements</h1>
 							<Nav>
-								<Nav.Item>
-									<Card className='card'>
-										<Card.Img variant='top' src={PhpLogo} className='logo' />
-										<Card.Body>
-											<Card.Title className='card-title'>PHP</Card.Title>
-										</Card.Body>
-									</Card>
-								</Nav.Item>
-								<Nav.Item>
-									<Card className='card'>
-										<Card.Img src={JavascriptLogo} className='logo' />
-										<Card.Body>
-											<Card.Title className='card-title'>Javascript</Card.Title>
-										</Card.Body>
-									</Card>
-								</Nav.Item>
-								<Nav.Item>
-									<Card className='card'>
-										<Card.Img src={LaravelLogo} className='logo' />
-										<Card.Body>
-											<Card.Title className='card-title'>Laravel</Card.Title>
-										</Card.Body>
-									</Card>
-								</Nav.Item>
-								<Nav.Item>
-									<Card className='card'>
-										<Card.Img src={NodeLogo} className='logo' />
-										<Card.Body>
-											<Card.Title className='card-title'>NodeJS</Card.Title>
-										</Card.Body>
-									</Card>
-								</Nav.Item>
-								<Nav.Item>
-									<Card className='card'>
-										<Card.Img src={ReactLogo} className='logo' />
-										<Card.Body>
-											<Card.Title className='card-title'>ReactJS</Card.Title>
-										</Card.Body>
-									</Card>
-								</Nav.Item>
-								<Nav.Item>
-									<Card className='card'>
-										<Card.Img src={ReduxLogo} className='logo' />
-										<Card.Body>
-											<Card.Title className='card-title'>Redux</Card.Title>
-										</Card.Body>
-									</Card>
-								</Nav.Item>
-								<Nav.Item>
-									<Card className='card'>
-										<Card.Img src={WebpackLogo} className='logo' />
-										<Card.Body>
-											<Card.Title className='card-title'>Webpack</Card.Title>
-										</Card.Body>
-									</Card>
-								</Nav.Item>
+								{frameworkLogos.map((logo, index) => (
+									<Nav.Item key={index}>
+										<Card className='card'>
+											<Card.Img
+												variant='top'
+												src={logo.name}
+												className='logo'
+											/>
+											<Card.Body>
+												<Card.Title className='card-title'>
+													{logo.title}
+												</Card.Title>
+											</Card.Body>
+										</Card>
+									</Nav.Item>
+								))}
 							</Nav>
 							<h2 className='mt-4'>Project Management tools</h2>
 							<Nav>
-								<Nav.Item>
-									<Card className='card'>
-										<Card.Img variant='top' src={GitHub} className='logo' />
-										<Card.Body>
-											<Card.Title className='card-title'>GitHub</Card.Title>
-										</Card.Body>
-									</Card>
-								</Nav.Item>
-								<Nav.Item>
-									<Card className='card'>
-										<Card.Img
-											variant='top'
-											src={PivotalTracker}
-											className='logo'
-										/>
-										<Card.Body>
-											<Card.Title className='card-title'>Pivotal</Card.Title>
-										</Card.Body>
-									</Card>
-								</Nav.Item>
+								{projectLogos.map((logo, index) => (
+									<Nav.Item key={index}>
+										<Card className='card'>
+											<Card.Img
+												variant='top'
+												src={logo.name}
+												className='logo'
+											/>
+											<Card.Body>
+												<Card.Title className='card-title'>
+													{logo.title}
+												</Card.Title>
+											</Card.Body>
+										</Card>
+									</Nav.Item>
+								))}
 							</Nav>
 						</FadeIn>
-						<ScrollAnimation animateIn='fadeIn' animateOut='fadeOut' delay={2000}>
+						<ScrollAnimation
+							animateIn='fadeIn'
+								animateOut='fadeOut'
+								delay={1000}
+						>
 							<h2 className='mt-4'>Continuous Integration</h2>
 							<Nav>
-								<Nav.Item>
-									<Card className='card'>
-										<Card.Img variant='top' src={TravisLogo} className='logo' />
-										<Card.Body>
-											<Card.Title className='card-title'>TravisCI</Card.Title>
-										</Card.Body>
-									</Card>
-								</Nav.Item>
-								<Nav.Item>
-									<Card className='card'>
-										<Card.Img variant='top' src={CircleLogo} className='logo' />
-										<Card.Body>
-											<Card.Title className='card-title'>CircleCI</Card.Title>
-										</Card.Body>
-									</Card>
-								</Nav.Item>
+								{integrationLogos.map((logo, index) => (
+									<Nav.Item key={index}>
+										<Card className='card'>
+											<Card.Img
+												variant='top'
+												src={logo.name}
+												className='logo'
+											/>
+											<Card.Body>
+												<Card.Title className='card-title'>
+													{logo.title}
+												</Card.Title>
+											</Card.Body>
+										</Card>
+									</Nav.Item>
+								))}
 							</Nav>
 						</ScrollAnimation>
 					</Col>
