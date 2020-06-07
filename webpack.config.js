@@ -19,7 +19,7 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(jpg|jpeg|png|gif)$/,
+        test: /\.(jpg|jpeg|png|gif|ico)$/,
         use: 'file-loader'
       }
     ]
@@ -30,7 +30,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html'
+      template: './public/index.html',
+      favicon: './assets/logo.ico'
     })
-  ]
+  ],
+  performance: {
+    hints: false
+  }
 }

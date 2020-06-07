@@ -4,7 +4,6 @@ import FadeIn from 'react-fade-in';
 import '../styles/styles.css';
 import { firstElement, secondeElement, thirdElement } from '../data';
 import Photo from '../../assets/vand.jpg';
-import Pic from '../../assets/ericky.jpeg';
 
 const Home = () => {
 	useEffect(() => {
