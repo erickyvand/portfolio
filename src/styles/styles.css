@@ -26,6 +26,11 @@ body {
 	margin: auto;
 }
 
+.social-logo {
+	width: 50px;
+	height: 50px;
+}
+
 .card {
 	width: 8rem;
 	height: 150px;
