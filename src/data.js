@@ -16,4 +16,4 @@ export const thirdElement = (
 	</p>
 );
 
-export const firstAboutElement = <span></span>
+export const contact = <p>You can send me an email at <strong style={{color: 'yellow'}}>erickyvand@gmail.com</strong></p>
