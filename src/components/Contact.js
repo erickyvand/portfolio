@@ -11,9 +11,9 @@ const Contact = () => {
 		document.title = 'Portfolio | Contact';
 	}, []);
 	return (
-		<div>
+		<div id='contact'>
 			<Container>
-				<Row>
+				<Row className='mt-5'>
 					<Col md={6}></Col>
 					<Col md={6}>
 						<div>{contact}</div>

@@ -1,6 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 import '../styles/styles.css';
 
 const Navigation = () => {
@@ -15,43 +15,62 @@ const Navigation = () => {
 					<Navbar.Collapse id='basic-navbar-nav'>
 						<Nav>
 							<Navbar.Brand>
-								<NavLink
-									exact
-									to='/'
-									activeClassName='active'
+								<Link
+									activeClass='active'
 									className='text-white'
+									to='home'
+									spy={true}
+									smooth={true}
+									offset={-70}
+									duration={500}
+									delay={1000}
 								>
 									Home
-								</NavLink>
+								</Link>
 							</Navbar.Brand>
 							<Navbar.Brand>
-								<NavLink
-									to='/about'
-									activeClassName='active'
+								<Link
+									activeClass='active'
 									className='text-white'
+									to='about'
+									spy={true}
+									smooth={true}
+									offset={-70}
+									duration={1000}
+									delay={1000}
 								>
 									About
-								</NavLink>
+								</Link>
 							</Navbar.Brand>
 							<Navbar.Brand>
-								<NavLink
-									to='/work'
-									activeClassName='active'
+								<Link
+									activeClass='active'
 									className='text-white'
+									to='work'
+									spy={true}
+									smooth={true}
+									offset={-70}
+									duration={500}
+									delay={1000}
 								>
 									Work
-								</NavLink>
+								</Link>
+							</Navbar.Brand>
+							<Navbar.Brand>
+								<Link
+									activeClass='active'
+									className='text-white'
+									to='contact'
+									spy={true}
+									smooth={true}
+									offset={-70}
+									duration={500}
+									delay={1000}
+								>
+									Contact
+								</Link>
 							</Navbar.Brand>
 						</Nav>
-						<Navbar.Brand className='ml-auto'>
-							<NavLink
-								to='/contact'
-								activeClassName='active'
-								className='text-white'
-							>
-								Contact
-							</NavLink>
-						</Navbar.Brand>
 					</Navbar.Collapse>
 				</Container>
 			</Navbar>

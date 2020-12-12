@@ -13,6 +13,7 @@ body {
 .text-white:hover {
 	color: yellow !important;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .profile-image {
@@ -46,4 +47,8 @@ body {
 	width: 350px;
 	margin-right: 20px;
 	margin-top: 20px;
+}
+
+.divider {
+	border: 1px solid white;
 }
