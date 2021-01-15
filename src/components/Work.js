@@ -11,6 +11,12 @@ import PcFeed from '../../assets/pc-feed.png';
 import PcProfile from '../../assets/pc-profile.png';
 import Calculator from '../../assets/calculator.png';
 import Reg from '../../assets/reg.png';
+import VcHome from '../../assets/vchome.png';
+import Typing from '../../assets/typing.png';
+import Show from '../../assets/show.png';
+import Add from '../../assets/add.png';
+import Cash from '../../assets/cash.png';
+import Send from '../../assets/send.png';
 
 const Work = () => {
 	useEffect(() => {
@@ -19,27 +25,77 @@ const Work = () => {
 	return (
 		<div id='work'>
 			<Container>
-				<Row className='mt-5'>
+				<Row className='mt-4'>
 					<Col>
-						<h3>Barefoot Nomad</h3>
-						<p>Online platform for booking a trip and accomodation</p>
+						<h3>VandChat</h3>
+						<p>Real-time Chat Application</p>
 					</Col>
 				</Row>
 				<Row>
 					<Col md={12} xs={12} sm={12}>
-						<Image src={ImageOne} className='work-image' />
-						<Image src={ImageTwo} className='work-image' />
-						<Image src={ImageThree} className='work-image' />
+						<Image src={VcHome} className='work-image' />
+						<Image src={Show} className='work-image' />
+						<Image src={Typing} className='work-image' />
 					</Col>
 				</Row>
 				<Row>
 					<Col className='mt-4'>
 						<Nav>
 							<Nav.Link
-								href='https://spinners-frontend-stage.herokuapp.com/signup'
+								href='https://vandchat.netlify.app/'
 								className='mx-auto'
 							>
-								<Button>Click here to visit Barefoot Nomad</Button>
+								<Button>Click here to visit Vandchat</Button>
+							</Nav.Link>
+						</Nav>
+					</Col>
+				</Row>
+				<Row className='mt-4'>
+					<Col>
+						<h3>Mojoo App</h3>
+						<p>Mobile Application for transfering money</p>
+					</Col>
+				</Row>
+				<Row>
+					<Col md={12} xs={12} sm={12}>
+						<Image src={Add} className='work-image' />
+						<Image src={Cash} className='work-image' />
+						<Image src={Send} className='work-image' />
+					</Col>
+				</Row>
+				<Row>
+					<Col className='mt-4'>
+						<Nav>
+							<Nav.Link
+								href='https://play.google.com/store/apps/details?id=com.somatechnology.mojoo'
+								className='mx-auto'
+							>
+								<Button>Click here to download and test Mojoo App</Button>
+							</Nav.Link>
+						</Nav>
+					</Col>
+				</Row>
+				<Row className='mt-4'>
+					<Col>
+						<h3>Promoclub</h3>
+						<p>Social media where you can post text, videos and images</p>
+					</Col>
+				</Row>
+				<Row>
+					<Col md={12} xs={12} sm={12}>
+						<Image src={PcHome} className='work-image' />
+						<Image src={PcFeed} className='work-image' />
+						<Image src={PcProfile} className='work-image' />
+					</Col>
+				</Row>
+				<Row>
+					<Col className='mt-4'>
+						<Nav>
+							<Nav.Link
+								href='https://promoclub-frontend.herokuapp.com/'
+								className='mx-auto'
+							>
+								<Button>Click here to visit Promoclub</Button>
 							</Nav.Link>
 						</Nav>
 					</Col>
@@ -69,27 +125,27 @@ const Work = () => {
 						</Nav>
 					</Col>
 				</Row>
-				<Row className='mt-4'>
+				<Row className='mt-5'>
 					<Col>
-						<h3>Promoclub</h3>
-						<p>Social media where you can post text, videos and images</p>
+						<h3>Barefoot Nomad</h3>
+						<p>Online platform for booking a trip and accomodation</p>
 					</Col>
 				</Row>
 				<Row>
 					<Col md={12} xs={12} sm={12}>
-						<Image src={PcHome} className='work-image' />
-						<Image src={PcFeed} className='work-image' />
-						<Image src={PcProfile} className='work-image' />
+						<Image src={ImageOne} className='work-image' />
+						<Image src={ImageTwo} className='work-image' />
+						<Image src={ImageThree} className='work-image' />
 					</Col>
 				</Row>
 				<Row>
 					<Col className='mt-4'>
 						<Nav>
 							<Nav.Link
-								href='https://promoclub-frontend.herokuapp.com/'
+								href='https://spinners-frontend-stage.herokuapp.com/signup'
 								className='mx-auto'
 							>
-								<Button>Click here to visit Promoclub</Button>
+								<Button>Click here to visit Barefoot Nomad</Button>
 							</Nav.Link>
 						</Nav>
 					</Col>

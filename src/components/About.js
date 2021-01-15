@@ -14,6 +14,7 @@ import CircleLogo from '../../assets/circle.png';
 import SequelizeLogo from '../../assets/sequelize.png';
 import PostgresLogo from '../../assets/postgres.png';
 import MysqlLogo from '../../assets/mysql.png';
+import FlutterLogo from '../../assets/flutter.jpeg';
 import '../styles/styles.css';
 
 const About = () => {
@@ -32,6 +33,7 @@ const About = () => {
 		{ name: SequelizeLogo, title: 'Sequeliz' },
 		{ name: PostgresLogo, title: 'Postgres' },
 		{ name: MysqlLogo, title: 'MySQL' },
+		{ name: FlutterLogo, title: 'Flutter' },
 	];
 
 	const projectLogos = [
